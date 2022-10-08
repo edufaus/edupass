@@ -26,7 +26,7 @@ function updateSal (event) {
         <input class="input" placeholder="Input" bind:value={inp}>
         <!-- <input type={hidden} class="input" placeholder="Password/Salt" bind:value={sal}>  -->
         <input class="input" placeholder="Master Password" { type } { sal } on:input={ updateSal } />
-        <button class="button"type="button" on:click="{ () => show_password = !show_password }">{show_password ? 'Hide Password/Salt' : 'Show Password/Salt'}</button>
+        <button class="button"type="button" on:click="{ () => show_password = !show_password }">{show_password ? 'Hide MasterPassword' : 'Show MasterPassword'}</button>
         <br>
         <button class="button" on:click={hash}>Generate Password</button>
         <h1 class="subtitle">{password}</h1>
