@@ -11,7 +11,7 @@ function updateSal (event) {
 }
 
         async function hash() {
-                password = "Ed@1" + await sha256(await salt(inp, sal));
+                password = "Ed@1" + await sha256(await salt(inp.toLocaleLowerCase(), sal));
         }
 </script>
 <title>EdPass</title>
