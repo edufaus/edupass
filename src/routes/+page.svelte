@@ -21,7 +21,7 @@ function updateSal (event) {
         <br>
         <!-- <h1 class="subtitle is-5">Only Remember One Password! Use an input such as the name or url of a website ( for example Youtube or youtube.com ).</h1> -->
         <h1 class="subtitle is-5">Only Remember One Password! Use an input such as the name or url of a website ( for example Youtube or youtube.com ). 
-                <br> Use the input and your master password to generate the password for an app. <br> The same password will always be generated so as long as you know the inpuy you will never lose your password.</h1>
+                <br> Use the input and your master password to generate the password for an app. <br> The same password will always be generated so as long as you know the input you will never lose your password.</h1>
 
         <input class="input" placeholder="Input" bind:value={inp}>
         <!-- <input type={hidden} class="input" placeholder="Password/Salt" bind:value={sal}>  -->
