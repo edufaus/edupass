@@ -16,12 +16,18 @@ function updateSal (event) {
 </script>
 <title>EdPass</title>
 <div class="box has-text-centered v-centered">
-        <h1 class="title">EdPass</h1>
+        <h1 class="title is-1">EdPass</h1>
+        <h2 class="subtitle is-5">Password Generator</h2>
+        <br>
+        <!-- <h1 class="subtitle is-5">Only Remember One Password! Use an input such as the name or url of a website ( for example Youtube or youtube.com ).</h1> -->
+        <h1 class="subtitle is-5">Only Remember One Password! Use an input such as the name or url of a website ( for example Youtube or youtube.com ). 
+                <br> Use the input and your master password to generate the password for an app. <br> The same password will always be generated so as long as you know the inpuy you will never lose your password.</h1>
+
         <input class="input" placeholder="Input" bind:value={inp}>
         <!-- <input type={hidden} class="input" placeholder="Password/Salt" bind:value={sal}>  -->
-        <input class="input" placeholder="Password/Salt" { type } { sal } on:input={ updateSal } />
+        <input class="input" placeholder="Master Password" { type } { sal } on:input={ updateSal } />
         <button class="button"type="button" on:click="{ () => show_password = !show_password }">{show_password ? 'Hide Password/Salt' : 'Show Password/Salt'}</button>
         <br>
-        <button class="button" on:click={hash}>Hash</button>
+        <button class="button" on:click={hash}>Generate Password</button>
         <h1 class="subtitle">{password}</h1>
 </div>
